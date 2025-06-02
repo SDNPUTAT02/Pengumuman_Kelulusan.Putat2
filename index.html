@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelulusan SDN Putat 02</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kelulusan SDN Putat 02</h1>
+    <p>Masukkan data siswa untuk melihat kelulusan.</p>
+
+    <form id="formKelulusan" onsubmit="return cekKelulusan(event)">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required />
+
+      <label for="nisn">NISN:</label>
+      <input type="text" id="nisn" name="nisn" placeholder="Masukkan NISN" required />
+
+      <button type="submit">Cek Kelulusan</button>
+    </form>
+
+    <div id="infoWaktu" class="info-waktu">
+      Pengumuman kelulusan dapat diakses mulai <strong>02 Juni 2025 pukul 13.00 WIB</strong>.
+    </div>
+
+    <div id="loading" class="loading" style="display:none;">
+      <div class="dump-truck"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <script src="scrip.js"></script>
+</body>
+</html>
