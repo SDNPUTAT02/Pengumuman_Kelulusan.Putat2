@@ -57,7 +57,7 @@ if (window.location.pathname.includes("selamat.html")) {
   if (namaSiswa && status) {
     document.getElementById("judulKelulusan").textContent = status;
     document.getElementById("pesanKelulusan").textContent = `Selamat, ${namaSiswa}! Anda dinyatakan lulus.`;
-    document.getElementById("pesanSelamat").textContent = `${namaSiswa}, Anda berhasil menyelesaikan studi di SDN Putat 02 dengan sangat baik. Semoga sukses selalu!`;
+    document.getElementById("pesanSelamat").textContent = `${namaSiswa}, "Selamat! Anda telah menyelesaikan pendidikan di SDN Putat 02 dengan sangat baik. Semoga kesuksesan selalu menyertai langkah Anda ke depan."`;
     confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
   } else {
     window.location.href = "index.html";
